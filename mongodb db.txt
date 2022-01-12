@@ -1,0 +1,89 @@
+4. Design MongoDB database schema for this app with five documents
+
+
+use datingapp
+db.createCollection("customers")
+
+db.customers.insertMany([
+{
+  "customer_name":"ruby",
+   "age":"34",
+   "occupation":"doctor",
+   "hobbies":[
+       "singing",
+       "reading"
+       ],
+    "food":[
+       "icecream",
+       "Pizza"
+       ],
+ "movies":[
+       "thriller",
+       "horror"
+       ]
+},
+{
+  "customer_name":"rony",
+   "age":"44",
+   "occupation":"teacher",
+   "hobbies":[
+       "dancing",
+       "reading"
+       ],
+    "food":[
+       "Pizza"
+       ],
+ "movies":[
+       "thriller",
+       "horror"
+       ]
+},
+{
+  "customer_name":"John",
+   "age":"24",
+   "occupation":"actor",
+   "hobbies":[
+       "cooking"
+       ],
+    "food":[
+       "chocolate",
+       ],
+ "movies":[
+       "thriller",
+       "fiction"
+       ]
+},
+{
+  "customer_name":"stella",
+   "age":"25",
+   "occupation":"doctor",
+   "hobbies":[
+       "dancing",
+       "reading"
+       ],
+    "food":[
+       "burger",
+       "Pizza"
+       ],
+ "movies":[
+       "horror"
+       ]
+},
+{
+  "customer_name":"mike",
+   "age":"30",
+   "occupation":"singer",
+   "hobbies":[
+       "singing",
+       "reading"
+       ],
+    "food":[
+       "icecream",
+       "Pizza"
+       ],
+ "movies":[
+       "thriller",
+       "horror"
+       ]
+}
+])
